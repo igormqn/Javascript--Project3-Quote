@@ -1,0 +1,74 @@
+html, body {
+    background: #5C258D;
+    background: -webkit-linear-gradient(to right, #4389A2, #5C258D);
+    background: linear-gradient(to right, #4389A2, #5C258D);
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.bg-light {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#quote {
+    font-size: 1.5em;
+    font-family: 'Satisfy', cursive;
+    line-height: 1.3em;
+    letter-spacing: 1px;
+    color: #333;
+}
+
+#quote:before {
+    content: open-quote;
+    font-size: 2em;
+    color: #4389A2;
+    vertical-align: -0.4em;
+}
+
+#quote:after {
+    content: close-quote;
+    font-size: 2em;
+    color: #4389A2;
+    vertical-align: -0.4em;
+}
+
+#author {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #777;
+    margin-top: 10px;
+}
+
+#new-quote {
+    background: #ff9966;
+    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
+    background: linear-gradient(to right, #ff5e62, #ff9966);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    margin-top: 20px; /* Added margin to create space between the quote and the button */
+}
+
+#new-quote:hover {
+    background: #ff5e62;
+    transform: scale(1.05);
+}
